@@ -1,0 +1,1 @@
+This directory contains partial html like the header and footer and others.
