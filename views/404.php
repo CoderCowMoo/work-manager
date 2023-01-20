@@ -6,7 +6,9 @@ require 'partials/nav.php';
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <p>The page you are looking for does not exist.</p>
+                <p>The page you are looking for does not exist.
+                <?php print ($_SERVER["REQUEST_URI"]); ?>
+                </p>
             </div>
         </div>
     </div>

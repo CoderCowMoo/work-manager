@@ -1,0 +1,14 @@
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+/* For submit button */
+table ~ .sub_button {
+    display: block;
+    margin-top: 10px;
+    border-radius: 1rem;
+}
