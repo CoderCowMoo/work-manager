@@ -35,7 +35,11 @@ $subjects = get_subjects_assoc();
         function add_to_db() {
             /* TODO refactor to use URL() class */
             // hostname just gives the domain/localhost
-            let url = window.location.protocol + "//" + window.location.hostname + ':8082/updatedb'; // http://localhost:8082/updatedb
+            let url = window.location.protocol 
+                    + "//" 
+                    + window.location.hostname 
+                    + window.location.port === '' ? '' : ':' + window.location.port
+                    + '/updatedb'; // http://localhost{:PORT}/updatedb
             let params = "";
             // parameters will be of form '{subject}={doneness}&...';
             subjects.forEach(subject => {
